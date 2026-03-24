@@ -90,12 +90,7 @@ HAVN (Helping All Voices be Noticed) is a youth-led initiative focused on improv
 
 ---
 
-## Contributing
+## Usage Notice
 
-Contributions are welcome. Please open an issue or submit a pull request for improvements or suggestions.
-
----
-
-## License
-
-This project is open-source and available under the MIT License.
+This repository is shared for demonstration and educational purposes.  
+The code may not be copied, distributed, or used in production without permission.
