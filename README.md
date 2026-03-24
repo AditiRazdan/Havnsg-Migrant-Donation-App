@@ -15,16 +15,16 @@ The platform focuses on reducing friction in support systems while fostering a s
 ## Key Features
 
 - Request Support  
-  Migrant workers can request essential items or assistance through a simple interface.
+  Migrant workers can submit requests for essential items or assistance.
 
-- Donor Matching  
-  Donors can view requests and directly contribute items or support.
+- Donor Participation  
+  Donors can view needs and directly contribute support.
 
-- Streamlined Coordination  
-  The app enables clear communication and coordination between users and supporters.
+- Coordinated Support  
+  The platform enables clear and efficient coordination between users and supporters.
 
 - Community-Centered Design  
-  Built with accessibility and simplicity in mind to ensure usability for diverse users.
+  Built to be simple, accessible, and usable for a wide range of users.
 
 ---
 
@@ -42,37 +42,7 @@ HAVN aims to:
 - Frontend: iOS (Swift)  
 - Backend: PHP (CodeIgniter)  
 - Database: MySQL  
-- APIs & Services: Twilio (SMS/OTP authentication)
-
----
-
-## Getting Started
-
-### Prerequisites
-- Xcode (for iOS app)  
-- PHP + local server (e.g., XAMPP)  
-- MySQL database  
-
-### Setup
-
-1. Clone the repository:
-   git clone https://github.com/your-username/havnsg-app.git
-
-2. Install dependencies:
-   cd havnsg-app  
-   pod install
-
-3. Configure environment variables:
-   - Add your Twilio credentials and JWT secret securely  
-   - Do not hardcode sensitive information  
-
-4. Run the backend server and launch the iOS app in Xcode
-
----
-
-## Security Note
-
-Sensitive credentials such as API keys and authentication tokens are managed through environment variables and are not stored in the repository.
+- Services: Twilio (OTP authentication)
 
 ---
 
@@ -80,13 +50,7 @@ Sensitive credentials such as API keys and authentication tokens are managed thr
 
 HAVN (Helping All Voices be Noticed) is a youth-led initiative focused on improving well-being, access, and inclusion for migrant workers in Singapore through community-driven solutions.
 
----
-
-## Future Improvements
-
-- In-app messaging between donors and recipients  
-- Smarter matching and prioritization of requests  
-- Expanded resource integration and partnerships  
+Learn more: https://www.havnsg.com/general-1-1
 
 ---
 
