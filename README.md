@@ -50,7 +50,7 @@ HAVN aims to:
 
 HAVN (Helping All Voices be Noticed) is a youth-led initiative focused on improving well-being, access, and inclusion for migrant workers in Singapore through community-driven solutions.
 
-Learn more: https://www.havnsg.com/general-1-1
+Learn more: https://www.havnsg.com/
 
 ---
 
