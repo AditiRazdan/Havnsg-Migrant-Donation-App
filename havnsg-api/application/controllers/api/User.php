@@ -16,14 +16,14 @@ class User extends CI_Controller {
     public function token($data)
     {
         $jwt = new JWT();
-        $jwtSecretKey = "Superman@77";
+        $jwtSecretKey = getenv('JWT_SECRET_KEY');
         $token = $jwt->encode($data, $jwtSecretKey, 'HS256');
         return $token;
     }
     
     public function get_token($dataToken){
         $jwt = new JWT();
-        $jwtSecretKey = "Superman@77";
+        $jwtSecretKey = getenv('JWT_SECRET_KEY');
         $token = $jwt->decode($dataToken,$jwtSecretKey,true);
         return $token;
     }
