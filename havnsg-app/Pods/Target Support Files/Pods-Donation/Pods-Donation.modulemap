@@ -1,0 +1,6 @@
+module Pods_Donation {
+  umbrella header "Pods-Donation-umbrella.h"
+
+  export *
+  module * { export * }
+}

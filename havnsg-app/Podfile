@@ -1,0 +1,16 @@
+platform :ios, '15.0'
+
+target 'Donation' do
+  use_modular_headers!
+  
+  pod 'SVProgressHUD'
+  pod 'IQKeyboardManager'
+  pod 'Alamofire'
+  pod 'DropDown'
+  pod 'SDWebImage'
+
+  # Modern Firebase
+  pod 'FirebaseAnalytics'
+  pod 'FirebaseMessaging'
+  pod 'CarbonKit'
+end

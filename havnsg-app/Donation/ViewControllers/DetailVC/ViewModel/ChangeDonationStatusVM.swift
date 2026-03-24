@@ -1,0 +1,42 @@
+//
+//  ReceiveRequestEditVM.swift
+//  Donation
+//
+//  Created by Kanhu Dash on 20/10/21.
+//
+
+import Foundation
+import UIKit
+
+class ChangeDonationRequestStatusVM: NSObject {
+    var statusData : ChangeDonationRequestStatusM?
+    var bindToController:(() -> ()) = {}
+
+    override init() {
+        super.init()
+    }
+    
+    func ChangeDonationRequestStatus(viewController: UIViewController,param:[String:Any],requestId: String) {
+        let url = ApiEndpoints.changeDonationRequestStatus + requestId
+        APIHandler.shared.callServiceMethodPOST(viewController: viewController, parameters: param, keyURL: url, isShowLoader: true, isHideLoader: true, loadingMsg: "") { (result:ChangeDonationRequestStatusM?, error) in
+            if error == nil {
+                if let success = result?.success , success {
+                    Utility().showAlert(Title: "Success", message: result?.message ?? "", viewcontroller: viewController) {
+                        self.bindToController()
+                    }
+                } else {
+                    let alertController = UIAlertController(title: "", message: result?.message, preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                    alertController.addAction(okAction)
+                    viewController.present(alertController, animated: true, completion: nil)
+                }
+            } else {
+                let alertController = UIAlertController(title: "", message: "something went wrong", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                alertController.addAction(okAction)
+                viewController.present(alertController, animated: true, completion: nil)
+            }
+        }
+    }
+}
+
